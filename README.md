@@ -48,7 +48,7 @@ This project contains end-to-end (E2E) tests for a API Gateway setup using Cypre
         npm run cy:open
         ```
 
-    - Run tests in headless mode (Github Actions [Job](https://github.com/kp721995/Test-Project/actions/runs/17570015215)):
+    - Run tests in headless mode (Github Actions [Job Example](https://github.com/kp721995/Test-Project/actions/runs/17570372483)):
 
         ```sh
         npm run cy:run
