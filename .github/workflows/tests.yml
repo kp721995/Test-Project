@@ -1,0 +1,21 @@
+name: e2e-tests
+on: workflow_dispatch
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Compose environment
+      run: docker compose up -d
+    
+    - name: Wait for environment to be ready
+      run: |
+          echo "Waiting for Gateway to be ready..."
+          sleep 20 
+
+    - name: Cypress run
+      uses: cypress-io/github-action@v5
+      with:
+        start: npm run cy:run

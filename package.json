@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "cypress": "^15.1.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:spec": "cypress run --spec 'cypress/e2e/my-spec.cy.js'"
+  }
+}

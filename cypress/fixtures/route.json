@@ -1,0 +1,29 @@
+{
+    "name": "new-route",
+    "protocols": [
+        "http",
+        "https"
+    ],
+    "tags": [
+        "new-tag",
+        "new-tag1"
+    ],
+    "service": "new-service",
+    "https_redirect_status_code": 426,
+    "strip_path": true,
+    "preserve_host": false,
+    "request_buffering": true,
+    "response_buffering": true,
+    "methods": "GET",
+    "hosts": "example.com",
+    "paths": "/api/v1",
+    "headers": {
+        "name": "x-api-version",
+        "value": "v1"
+    },
+    "regex_priority": 0,
+    "path_handling": "v0",
+    "sources": null,
+    "destinations": null,
+    "snis": "api.example.com"
+}

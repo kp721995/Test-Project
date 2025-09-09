@@ -1,14 +1,20 @@
-# Test Complete ignore files: https://support.smartbear.com/viewarticle/68002/
+node_modules
+.tmp
+.sass-cache
+.DS_Store
+npm-debug.log
+tmp
+.projects
+*.orig
 
-# Tester-specific Settings
-*.tcCFGExtender
-*.tcLS
-
-# Type library declarations
-*.tlb
-
-# Log files
-*.tcLogs
-
-# Backup files
-*.bak
+videos
+out.js
+/*/cypress/logs
+/*/cypress/downloads
+/mochawesome-report/*
+snapshots.js
+.nyc_output
+coverage
+dist
+test-data.json
+**/.parcel-cache

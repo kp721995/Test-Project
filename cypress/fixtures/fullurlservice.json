@@ -1,0 +1,14 @@
+{
+  "name": "new-service",
+  "tags": "new-tag",
+  "read_timeout": 70000,
+  "retries": 6,
+  "connect_timeout": 70000,
+  "tls_verify_value": true,
+  "tls_verify_enabled": true,
+  "ca_certificates": null,
+  "client_certificate": null,
+  "write_timeout": 70000,
+  "port": 80,
+  "url": "http://httpbin.testhq.com"
+}
